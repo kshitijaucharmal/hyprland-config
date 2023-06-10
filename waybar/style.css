@@ -1,0 +1,152 @@
+/*
+ ********************************************
+ *░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░*
+ *░░█▀█░█░░░█░█░█▀▀░░░█░█░█░░░▀█▀░█▀▄░█▀█░░*
+ *░░█▀▀░█░░░█░█░▀▀█░░░█░█░█░░░░█░░█▀▄░█▀█░░*
+ *░░▀░░░▀▀▀░▀▀▀░▀▀▀░░░▀▀▀░▀▀▀░░▀░░▀░▀░▀░▀░░*
+ *░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░*
+ ********************************************
+ */
+
+* {
+	border: none;
+    border-radius: 6;
+	/*font-family: Nerd Font Hack;*/
+	font-size: 10;
+    font-family: "Robaga Rounded Bold", "FiraCode Nerd Font", "Source Han Sans JP Medium";
+/*font-0 = Robaga Rounded:style=Bold:size=8;0*/
+/*font-1 = FiraCode Nerd Font:size=9;0*/
+/*font-2 = "Source Han Sans JP,源ノ角ゴシック JP,Source Han Sans JP Medium,源ノ角ゴシック JP Medium:style=Medium,Regular"*/
+	min-height: 10px;
+}
+
+window#waybar {
+	border-radius: 0;
+	background: transparent;
+}
+
+window#waybar.hidden {
+	background: #000000;
+	opacity: 0.8;
+}
+
+#window {
+    padding-left: 8px;
+    padding-right: 8px;
+	
+	transition: none;
+    color: #f8f8f2;
+    /*background: #282a36;*/
+    /*color: transparent;*/
+    background: transparent;
+}
+
+window#waybar.termite #window,
+window#waybar.Firefox #window,
+window#waybar.Navigator #window,
+window#waybar.PCSX2 #window {
+    color: #000000;
+	background: #e6e6e6;
+}
+
+#workspaces {
+	border-radius: 0;
+	background: #282a36;
+	transition: none;
+}
+
+#workspaces button {
+	transition: none;
+	color: #f8f8f2;
+	/*background: transparent;*/
+	font-size: 16px;
+}
+
+#workspaces button.focused {
+	color: #9aedfe;
+}
+
+#workspaces button:hover {
+	transition: none;
+	box-shadow: inherit;
+	text-shadow: inherit;
+	color: #ff79c6;
+}
+
+#battery {
+	padding-left: 8px;
+	padding-right: 8px;
+	margin-bottom: 0;
+	
+	background: #282a36;
+	transition: none;
+	color: #000000;
+	background: #5af78e;
+}
+
+#mpd.disconnected,
+#mpd.stopped {
+	color: #f8f8f2;
+	background: #282a36;
+}
+
+#network {
+	padding-left: 8px;
+	padding-right: 8px;
+	margin-bottom: 0;
+	
+	transition: none;
+	color: #000000;
+	background: #bd93f9;
+}
+
+#pulseaudio {
+	padding-left: 8px;
+	padding-right: 8px;
+	margin-bottom: 0;
+	
+	transition: none;
+	color: #000000;
+	background: #9aedfe;
+}
+
+#temperature {
+	padding-left: 8px;
+	padding-right: 8px;
+	margin-bottom: 0;
+	
+	transition: none;
+	color: #000000;
+	background: #5af78e;
+}
+
+#cpu {
+	padding-left: 8px;
+	padding-right: 8px;
+	margin-bottom: 0;
+	
+	transition: none;
+	color: #000000;
+	background: #f1fa8c;
+}
+
+#memory {
+	padding-left: 8px;
+	padding-right: 8px;
+	margin-bottom: 0;
+	
+	transition: none;
+	color: #000000;
+	background: #ff6e67;
+}
+
+#clock {
+	padding-left: 8px;
+	padding-right: 8px;
+	margin-bottom: 0;
+	
+	transition: none;
+	color: #000000;
+	background: #f1fa8c;
+}
+
